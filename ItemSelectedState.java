@@ -26,4 +26,10 @@ public class ItemSelectedState implements VendingMachineState {
         System.out.println("Setting vending machine to Out of Order.");
         vendingMachine.setCurrentState(new OutOfOrderState());
     }
+    @Override
+
+    public void setIdle(VendingMachine vendingMachine){
+        System.out.println("Vending machine is now idle.");
+        vendingMachine.setCurrentState(new IdleState());
+    }
 }

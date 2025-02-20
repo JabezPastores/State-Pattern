@@ -18,4 +18,10 @@ public class OutOfOrderState implements VendingMachineState {
     public void setOutOfOrder(VendingMachine vendingMachine) {
         System.out.println("Vending machine is already out of order.");
     }
+    @Override
+    public void setIdle(VendingMachine vendingMachine){
+        System.out.println("Vending machine is now idle.");
+        vendingMachine.setCurrentState(new IdleState());
+        
+    }
 }

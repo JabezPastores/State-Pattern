@@ -11,12 +11,17 @@ public class DispensingState implements VendingMachineState {
 
     @Override
     public void dispenseItem(VendingMachine vendingMachine) {
-        System.out.println("Item dispensed. Returning to Idle state.");
-        vendingMachine.setCurrentState(new IdleState());
+        System.out.println("Item dispensed");
     }
 
     @Override
     public void setOutOfOrder(VendingMachine vendingMachine) {
         System.out.println("Cannot set out of order while dispensing.");
+    }
+    @Override
+
+    public void setIdle(VendingMachine vendingMachine){
+        System.out.println("Vending machine is now idle.");
+        vendingMachine.setCurrentState(new IdleState());
     }
 }

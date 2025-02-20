@@ -41,4 +41,7 @@ public class VendingMachine {
     public void setOutOfOrder() {
         currentState.setOutOfOrder(this);
     }
+    public void setIdle(){
+        currentState.setIdle(this);
+    }
 }
