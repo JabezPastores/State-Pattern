@@ -1,5 +1,5 @@
 # State Pattern for Vending Machine
-
+![image](https://github.com/JabezPastores/State-Pattern/blob/main/State%20Pattern%20UML.png)
 ## Problem Statement
 A vending machine needs to manage multiple states, each with specific rules and restrictions. The current implementation relies on conditional statements within the `VendingMachine` class, making it difficult to maintain as the number of states grows.
 
